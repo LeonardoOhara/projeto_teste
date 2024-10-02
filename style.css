@@ -1,0 +1,75 @@
+body {
+    height: 100vh;
+    padding: 0;
+    background-color: rgb(79, 133, 112);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 , h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+section > p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+li, ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    
+}
+ 
+#toggle-button-container {
+    position: absolute;
+    right: 5%; /* Botão parcialmente fora da tela */
+    top: 10%;
+    transform: translateY(-50%);
+    transition: left 0.3s ease; /* Transição suave ao mover */
+    margin: 0;
+}
+
+#toggle-button-container:hover {
+    right: 5%; /* Quando o mouse estiver sobre a aba, o botão aparece */
+    margin: 0;
+}
+
+#toggle-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    width: 90px; /* Largura do botão */
+}
+
+#toggle-button.desativado {
+    background-color: red;
+}
+
+
+/* Estilos de exemplo para elementos de texto */
+p, h1, h2, div {
+    margin: 20px;
+}
+
+section {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section > img {
+    margin: auto;
+    display: block;
+}
